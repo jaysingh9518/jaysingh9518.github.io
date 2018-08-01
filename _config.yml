@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: https://resume.jaysingh9518.net
 
 url: https://www.jaysingh9518.net
 your url: http://jaysingh9518.github.io
@@ -34,15 +34,15 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: facebook.com/jaysingh9518
-twitter: twitter.com/jaysingh9518
+facebook: jaysingh9518
+twitter: jaysingh9518
 # google: mygoogle
-instagram: instagram.com/jaysingh9518
+instagram: jaysingh9518
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: github.com/jaysingh9518
+github: jaysingh9518
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
