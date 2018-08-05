@@ -1,6 +1,7 @@
 ---
 title: ":ramen: Indigo, minimalist jekyll theme"
 layout: post
+comments: true
 date: 2016-01-23 22:10
 tag: jekyll
 image: https://jekyllrb.com/img/logo-2x.png

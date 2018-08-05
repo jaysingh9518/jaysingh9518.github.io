@@ -4,7 +4,7 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>I am a IT profesional working with <a href="http://www.moderntechnologies.in/">Modern Technologies</a> and I also love to get extra knowledge like coding, programming and extra.</p>
+<p>I am a IT professional working with <a href="http://www.moderntechnologies.in/">Modern Technologies</a> and I also love to get extra knowledge like coding, programming and extra.</p>
 
 <p></p>
 
