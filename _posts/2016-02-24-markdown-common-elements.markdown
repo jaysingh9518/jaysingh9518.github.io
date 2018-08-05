@@ -9,7 +9,7 @@ tag:
 - elements
 star: true
 category: blog
-author: johndoe
+author: Jay Prakash
 description: Markdown summary with different options
 ---
 
@@ -129,11 +129,11 @@ Markdown can also contain images. I'll need to add something here sometime.
 
 {% highlight raw %}
 ![Markdowm Image][/image/url]
-<figcaption class="caption">Photo by John Doe</figcaption>
+<figcaption class="caption">Photo by Jay Prakash</figcaption>
 {% endhighlight %}
 
 ![Markdowm Image][6]
-<figcaption class="caption">Photo by John Doe</figcaption>
+<figcaption class="caption">Photo by Jay Prakash</figcaption>
 
 *Bigger Images*?
 
