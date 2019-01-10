@@ -7,16 +7,16 @@ description: A site develop and publish Jay Prakash.
 
 # if it's an external image, update below for true
 # better with square images
-external-image: false
+external-image: true
 picture: assets/images/profile.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://resume.jaysingh9518.net
+resume-url: https://resume.jaysingh9518.com
 
-url: https://www.jaysingh9518.net
+url: https://www.jaysingh9518.com
 your url: http://jaysingh9518.github.io
 
 permalink: /:title/
@@ -57,7 +57,7 @@ authors:
     johndoe:
         name: Jay Prakash
         bio: A Man who wanna travel the world! with his passion
-        external-image: false
+        external-image: true
         picture: assets/images/profile.jpg
         twitter: jaysingh9518
     # jamesfoster:
