@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+  --top-spacing: 100px;
+  scroll-padding-top: var(--top-spacing);
+}
+
+body {
+  margin: var(--top-spacing) auto;
+
+  max-width: 800px;
+  padding: 0 20px;
+  font: 18px/1.4 system-ui;
+  /* padding: 0; */
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+  overflow: hidden;
+  background-color: #eeeeee;
+  top: 0;
+  text-transform: ;
+}
+
+#container{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0;
+  font-family: asap;
+  position: relative;
+  overflow: hidden;
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  background: #a0caca;
+  text-align: center;
+  font-family: Lobster;
+  text-shadow: 7px 7px 10px grey;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1px;
+    transition: font 2s;
+}
+
+header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+
+}
+
+header a:hover {
+  background-color: tranparent;
+  color: black;
+  font-size: 45px;
+  border:2.5px solid #E4D5EA;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 5px 10px 15px 5px;
+}
+
+header a:active{
+  color: grey;
+  font-style: italic;
+}
+
+#mySidenav a {
+  position: fixed;
+  font-family: none;
+  float: left;
+  left: -130px;
+  transition: 0.3s;
+  text-decoration: none;
+  padding: 15px;
+  width: 130px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#home{
+  top: 20px;
+  background-color: #eeeeee;
+  }
+
+#about {
+  top: 80px;
+  background-color: #cce5cc;
+}
+
+#blog {
+  top: 140px;
+  background-color: #ccccff;
+}
+
+#photograph {
+  top: 200px;
+  background-color: #5ac2b1;
+}
+
+#contact {
+  top: 260px;
+  background-color: #ffd27f;
+}
+
+.clr{
+  clear: both;
+}
+
+#home1{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#home1 p {
+  font-size: 25px;
+  font-family: Comfortaa;
+  font-weight: 800;
+}
+
+#myBtn1 {
+  margin-left: 315px;
+  margin-right: 355px;
+  border: none;
+  outline: none;
+  background-color: #cce5cc;
+  border-radius: 15px;
+  width: 120px;
+  height: 50px;
+  /* align-self: center; */
+  position: absolute;
+  top: 9%;
+  -ms-transform: translateY(-50%);
+  /* transform: translateY(-50%); */
+  -ms-transform: translate(-90%, -10%);
+  /* transform: translate(-50%, -50%); */
+}
+
+#myBtn1 a{
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-indent: inline;
+}
+
+#myBtn1:hover {
+  background-color: #555;
+}
+
+#about1{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#about1 img{
+  margin: 2.5vw 14vw 0 14vw;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+#about1 h2{
+  font-size: 2em;
+  text-align: center;
+  font-family: Comfortaa;
+  font-weight: 900;
+}
+
+#about1 p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#social-links{
+  display: inline-block;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-github {
+  background: #06322b;
+  color: white;
+}
+
+.fa-google {
+  background: #cb2027;
+  color: white;
+}
+
+#blog1{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#blog1 h1{
+  text-align: center;
+  font-size: 10vw;
+  margin-left: 20vw;
+  position: absolute;
+  color: #107dac;
+  font-family: Festive;
+  /* font-variant: small-caps; */
+  text-shadow: 4px 10px 5px #ddeedd;
+  overflow: hidden;
+}
+
+#photograph1{
+  margin-top: 15px;
+  height: 78vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#photograph1 h2{
+  text-align: center;
+  font-family: tahoma;
+}
+
+div.polaroid {
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 25px auto;
+  float: none;
+  border-radius: 5px;
+
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+#myImg1:hover {
+  opacity: 0.7;
+}
+
+#myImg2:hover {
+  opacity: 0.7;
+}
+
+#myImg3:hover {
+  opacity: 0.7;
+}
+
+#myImg4:hover {
+  opacity: 0.7;
+}
+
+#myImg5:hover {
+  opacity: 0.7;
+}
+
+#myImg6:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 750px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 750px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 750px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+#contact1{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 100px auto;
+}
+
+#contact1 h2{
+  text-align: center;
+  font-family: tahoma;
+}
+
+.contactme {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+footer{
+  color: #eeeeee;
+  font-size: 18px;
+  text-align: center;
+  background-color: #a0caca;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
