@@ -179,7 +179,7 @@ header a:active{
 }
 
 #about1 img{
-  margin: 2.5vw 14vw 0 14vw;
+  margin: 1% 32% -1% 32%;
   border: 1px solid #ddd;
   border-radius: 25px;
   padding: 5px;
@@ -188,6 +188,8 @@ header a:active{
 #about1 h2{
   font-size: 2em;
   text-align: center;
+  padding: 0%;
+  margin: 0%;
   font-family: Comfortaa;
   font-weight: 900;
 }
@@ -195,6 +197,8 @@ header a:active{
 #about1 p {
   font-size: 1.2em;
   text-align: center;
+  padding: 0%;
+  margin: 0%;
 }
 
 #social-links{
