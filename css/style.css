@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
 
+:root {
+  --color-1: #eeeeee;
+  --color-2: #cce5cc;
+  --color-3: #ccccff;
+  --color-4: #5ac2b1;
+  --color-5: #ffd27f;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -14,24 +22,27 @@ html {
 
 body {
   margin: var(--top-spacing) auto;
-
-  max-width: 800px;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
   padding: 0 20px;
-  font: 18px/1.4 system-ui;
+  /* font: 18px/1.4 system-ui; */
   /* padding: 0; */
   /* overflow-x: hidden; */
   /* overflow-y: hidden; */
   overflow: hidden;
   background-color: #eeeeee;
   top: 0;
-  text-transform: ;
 }
 
-#container{
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: auto;
-  margin-bottom: auto;
+.container{
+  width: 80%;
+  height: calc(100vh - 15vh);
+  /* max-height: calc(100vh - 20vh); */
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -2%;
+  margin-bottom: 0;
   padding: 0;
   font-family: asap;
   position: relative;
@@ -40,44 +51,56 @@ body {
 
 header.fixed {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 5px;
-  background: #a0caca;
+  top: 0%;
+  left: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 10vh;
+  margin-top: -1.5%;
+  margin-bottom: -1.5%;
+  padding: 0.25%;
+  background: transparent;
   text-align: center;
   font-family: Lobster;
   text-shadow: 7px 7px 10px grey;
 }
 
 header a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1px;
-    transition: font 2s;
-}
-
-header a.logo {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  /* line-height: 1px; */
   font-size: 35px;
   font-weight: bold;
-
 }
 
 header a:hover {
-  background-color: tranparent;
-  color: black;
-  font-size: 45px;
-  border:2.5px solid #E4D5EA;
-  border-radius: 20px;
-  cursor: pointer;
-  padding: 5px 10px 15px 5px;
+  background-color: transparent;
+  animation: text 2s ease-in-out forwards;
+}
+
+@keyframes text {
+  100% {
+    transform: text scale(1.5);
+    color: rgb(243, 192, 218);
+    text-shadow: -4px -4px 7px grey;
+    
+  }
 }
 
 header a:active{
   color: grey;
   font-style: italic;
+}
+
+header hr {
+  border: none;
+  border-top: 5px ridge rgb(235, 235, 235);
+  overflow: visible;
+  margin-top: 0%;
+  padding: 0%;
 }
 
 #mySidenav a {
@@ -101,33 +124,30 @@ header a:active{
 }
 
 #home{
-  top: 20px;
-  background-color: #eeeeee;
+  top: 100px;
+  background-color: var(--color-1);
   }
 
 #about {
-  top: 80px;
-  background-color: #cce5cc;
+  top: 160px;
+  background-color: var(--color-2);
 }
 
 #blog {
-  top: 140px;
-  background-color: #ccccff;
+  top: 220px;
+  background-color: var(--color-3);
 }
 
 #photograph {
-  top: 200px;
-  background-color: #5ac2b1;
+  top: 280px;
+  background-color: var(--color-4);
 }
 
 #contact {
-  top: 260px;
-  background-color: #ffd27f;
+  top: 340px;
+  background-color: var(--color-5);
 }
 
-.clr{
-  clear: both;
-}
 
 #home1{
   height: 100vh;
@@ -142,21 +162,18 @@ header a:active{
 }
 
 #myBtn1 {
-  margin-left: 315px;
-  margin-right: 355px;
+  position: sticky;
+  bottom: 7%;
+  left: 46%;
+  z-index: 99;
+  font-size: 2%;
   border: none;
   outline: none;
-  background-color: #cce5cc;
-  border-radius: 15px;
-  width: 120px;
-  height: 50px;
-  /* align-self: center; */
-  position: absolute;
-  top: 9%;
-  -ms-transform: translateY(-50%);
-  /* transform: translateY(-50%); */
-  -ms-transform: translate(-90%, -10%);
-  /* transform: translate(-50%, -50%); */
+  background-color: var(--color-2);
+  color: white;
+  cursor: pointer;
+  padding: 1.2%;
+  border-radius: 10%;
 }
 
 #myBtn1 a{
@@ -202,13 +219,15 @@ header a:active{
 }
 
 #social-links{
-  display: inline-block;
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .fa {
   padding: 15px;
   font-size: 20px;
-  width: 50px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin-left: 30px;
@@ -285,7 +304,7 @@ div.polaroid {
 
 }
 
-div.container {
+div.content {
   text-align: center;
   padding: 10px 20px;
 }
@@ -403,9 +422,14 @@ div.container {
 }
 
 #contact1{
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
+  height: 78vh;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  overflow-x: hidden;
+  overflow-y: scroll;
   padding: 100px auto;
 }
 
@@ -456,21 +480,42 @@ input[type=submit]:hover {
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 50px;
+  border-radius: 70px;
+}
+
+#myBtn a {
+  text-decoration: none;
+  color: white;
 }
 
 #myBtn:hover {
   background-color: #555;
 }
 
-footer{
-  color: #eeeeee;
+footer {
+
+  margin-left: -2%;
+  margin-right: -2%;
+  bottom: 0%;
+  position: sticky;
+  height: 7vh;
+  overflow: hidden;
+  width: calc(100%-60%);
+  background-color: hsla(5, 0%, 82%);
+}
+
+footer hr {
+  border: none;
+  border-top: 5px ridge rgb(235, 235, 235);
+  overflow: visible;
+  margin-top: -0.045%;
+}
+
+footer p  {
+  color: #a39f9f;
   font-size: 18px;
   text-align: center;
-  background-color: #a0caca;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  padding: 0%;
 }

@@ -23,6 +23,7 @@ navLinks.forEach((navLink) => {
 
 document.querySelector('#myBtn').addEventListener('click', navClickHandler);
 document.querySelector('#myBtn1').addEventListener('click', navClickHandler);
+document.querySelector('#heading').addEventListener('click', navClickHandler);
 
 //Get the button
 var mybutton = document.getElementById("myBtn");
@@ -31,10 +32,10 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
     mybutton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    // mybutton.style.display = "none";
   }
 }
 
