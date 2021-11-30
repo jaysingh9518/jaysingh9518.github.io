@@ -8,60 +8,56 @@
     <link rel="shortcut icon" href="images/j.png">
   </head>
   <body>
-    <div id="container">
-      <!-- Header:  -->
-      <header class="fixed">
-        <h1><a class="logo" id="heading" href="#home1" data-id="home">Jay's Portfolio</a></h1>
-        <hr>
-      </header>
-      <!-- Navigation Bar:  -->
-      <div id="mySidenav" class="sidenav">
-        <a href="#home1" id="home" data-id="home">Home</a>
-        <a href="#about1" id="about" data-id="about">About</a>
-        <a href="#blog1" id="blog" data-id="blog">Blog</a>
-        <a href="#photograph1" id="photograph" data-id="photograph">photography</a>
-        <a href="#contact1" id="contact" data-id="contact">Contact</a>
+    <!-- Header:  -->
+    <header class="fixed">
+      <h1 class="logo"><a id="heading" href="#home1" data-id="home">Jay's Portfolio</a></h1>
+      <nav class="nav" id="mySidenav">
+        <a class="nav-link" href="#home1" id="home" data-id="home">Home</a>
+        <a class="nav-link" href="#about1" id="about" data-id="about">About</a>
+        <a class="nav-link" href="#photograph1" id="photograph" data-id="photograph">photography</a>
+        <a class="nav-link" href="#contact1" id="contact" data-id="contact">Contact</a>
+      </nav>
+    </header>
+    <div class="container">
+      <!--Home-Section:  -->
+      <div id="home1">
+        <article>
+          <h2>Welcome,</h2>
+          <p>This is my simple single-page website that I designed with HTML, CSS and JS.</p>
+          <p>If you wanna Know more about me, Go to about section</p>
+          <p>click here to go about menu or click from the top</p>
+          <br>
+        </article>
       </div>
-      <div class="container">
-        <!--Home-Section:  -->
-        <div id="home1">
-          <article>
-            <h2>Welcome,</h2>
-            <p>This is my simple single-page website that I designed with HTML, CSS and JS.</p>
-            <p>If you wanna Know more about me, Go to about section</p>
-            <p>click here or click from the hidable menu from the left</p>
-            <br>
-            <button id="myBtn1" data-id="about" title="About Me"><a href="#about1">About Me</a></button>
-          </article>
+      <!--About-Section-->
+      <div id="about1">
+        <img src="images/profilepic.jpg" alt="Profile Pic" width="250px">
+        <h2>Jay Prakash</h2>
+        <p>A Man who wanna travel the world! with his passion.</p>
+        <br>
+        <div id="social-links">
+          <a class="fa fa-facebook" data-title="facebook.com/jaysingh9518" href="http://facebook.com/jaysingh9518" target="_blank"></a>
+          <a class="fa fa-twitter" data-title="twitter.com/jaysingh9518" href="http://twitter.com/jaysingh9518" target="_blank"></a>
+          <a class="fa fa-instagram" data-title="instagram.com/jaysingh9518" href="http://instagram.com/jaysingh9518" target="_blank"></a>
+          <a class="fa fa-github" data-title="github.com/jaysingh9518" href="https://github.com/jaysingh9518" target="_blank"></a>
+          <a class="fa fa-google" data-title="jaysingh9518@gmail.com" href="mailto:jaysingh9518@gmail.com"></a>
         </div>
-        <!--About-Section-->
-        <div id="about1">
-          <img src="images/profilepic.jpg" alt="Profile Pic" width="250px">
-          <h2>Jay Prakash</h2>
-          <p>A Man who wanna travel the world! with his passion.</p>
-          <br>
-          <div id="social-links">
-            <a class="fa fa-facebook" data-title="facebook.com/jaysingh9518" href="http://facebook.com/jaysingh9518" target="_blank"></a>
-            <a class="fa fa-twitter" data-title="twitter.com/jaysingh9518" href="http://twitter.com/jaysingh9518" target="_blank"></a>
-            <a class="fa fa-instagram" data-title="instagram.com/jaysingh9518" href="http://instagram.com/jaysingh9518" target="_blank"></a>
-            <a class="fa fa-github" data-title="github.com/jaysingh9518" href="https://github.com/jaysingh9518" target="_blank"></a>
-            <a class="fa fa-google" data-title="jaysingh9518@gmail.com" href="mailto:jaysingh9518@gmail.com"></a>
-          </div>
-        </div>
-        <!--Blog-Section-->
-        <div id="blog1">
-          <p>Good Morning, how are you?</p>
-          <br>
-          <p>I am fine.</p>
-        </div>
-        <!--Photograph-Section-->
-        <div id="photograph1">
-          <h2>Photography</h2>
-          <!--Polaroid-Card-->
+      </div>
+      <!--Photograph-Section-->
+      <div id="photograph1">
+        <h2 class="heading">Photography</h2>
+        <!--Polaroid-Card-->
+        <div class="div-img">
           <div class="polaroid">
             <img id="myImg" src="images/sunset.jpg" alt="Marine Drive View, Ernakullam, Keral" style="width:100%">
             <div class="content">
               <p>Marine Drive View, Ernakullam, Keral</p>
+            </div>
+          </div>
+          <div class="polaroid">
+            <img id="myImg3" src="images/sunset2.jpg" alt="Sukhna Lake, Chandigarh, Punjab" style="width:100%">
+            <div class="content">
+              <p>Sukhna Lake, Chandigarh, Punjab</p>
             </div>
           </div>
           <div class="polaroid">
@@ -74,12 +70,6 @@
             <img id="myImg2" src="images/csmt.jpg" alt="CSMT, Mumbai" style="width:100%">
             <div class="content">
               <p>CSMT, Mumbai</p>
-            </div>
-          </div>
-          <div class="polaroid">
-            <img id="myImg3" src="images/sunset2.jpg" alt="Sukhna Lake, Chandigarh, Punjab" style="width:100%">
-            <div class="content">
-              <p>Sukhna Lake, Chandigarh, Punjab</p>
             </div>
           </div>
           <div class="polaroid">
@@ -100,50 +90,44 @@
               <p>Prem Mandir, Vrindavan</p>
             </div>
           </div>
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-          </div>
         </div>
-        <!--Contact-Section-->
-        <div id="contact1">
-          <h2>Contact Me</h2>
-          <div class="contactme">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              <label for="country_area">Country Area</label>
-              <select id="country" name="country">
-                <option value="asian">Asian countries</option>
-                <option value="oceanian">Oceanian countries</option>
-                <option value="northAmerican">North American countries</option>
-                <option value="ueropean">European countries</option>
-                <option value="african">African countries</option>
-              </select>
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
-        <!-- Sidebar:  -->
-        <!--<aside id="sidebar">
-          <h3>Sidebar</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </aside>-->
       </div>
-      <!-- Scroll Top Button:  -->
-      <button id="myBtn" title="Go to top" data-id="home"><a href="#home1">Top</a></button>
-      <!-- Footer:  -->
-      <footer id="footer">
-        <hr>
-        <p>Copyright &copy; 2021</p>
-      </footer>
-    </div>
+      <!--Contact-Section-->
+      <div id="contact1">
+        <h2>Contact Me</h2>
+        <div class="contactme">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country_area">Country Area</label>
+            <select id="country" name="country">
+              <option value="asian">Asian countries</option>
+              <option value="oceanian">Oceanian countries</option>
+              <option value="northAmerican">North American countries</option>
+              <option value="ueropean">European countries</option>
+              <option value="african">African countries</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    <!-- Scroll Top Button:  -->
+    <button id="myBtn" title="Go to top" data-id="home"><a href="#home1">Top</a></button>
+    <!-- Footer:  -->
+    <footer class="fixed" id="footer">
+      <hr>
+      <p>Copyright &copy; 2021</p>
+    </footer>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
