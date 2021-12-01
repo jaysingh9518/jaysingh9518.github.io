@@ -1,29 +1,32 @@
-function changeColor(color) {
-  document.body.style.background = color;
-}
+// function changeColor(color) {
+//   document.getElementById('header').style.background = color;
+// }
 
-function navClickHandler(event) {
-  const currentPage = event.currentTarget.dataset.id;
-  const pageBackground = {
-    'home': '#eeeeee',
-    'about': '#cce5cc',
-    'blog': '#ccccff',
-    'photograph': '#5ac2b1',
-    'contact': '#ffd27f',
-  }
-  const currPageBg = pageBackground[currentPage];
-  changeColor(currPageBg)
-}
+// function changeColor1(color) {
+//   document.getElementById('footer').style.background = color;
+// }
 
-const navLinks = document.querySelectorAll('#mySidenav a');
+// function navClickHandler(event) {
+//   const currentPage = event.currentTarget.dataset.id;
+//   const pageBackground = {
+//     'home': 'hsla(0, 0%, 93%, 0.514)',
+//     'about': 'hsla(0, 0%, 93%, 0.514)',
+//     'photograph': 'hsla(0, 0%, 93%, 0.514)',
+//     'contact': 'hsla(0, 0%, 93%, 0.514)',
+//   }
+//   const currPageBg = pageBackground[currentPage];
+//   changeColor(currPageBg)
+//   changeColor1(currPageBg)
+// }
 
-navLinks.forEach((navLink) => {
-  navLink.addEventListener('click', navClickHandler);
-});
+// const navLinks = document.querySelectorAll('#mySidenav a');
 
-document.querySelector('#myBtn').addEventListener('click', navClickHandler);
-document.querySelector('#myBtn1').addEventListener('click', navClickHandler);
-document.querySelector('#heading').addEventListener('click', navClickHandler);
+// navLinks.forEach((navLink) => {
+//   navLink.addEventListener('click', navClickHandler);
+// });
+
+// document.querySelector('#myBtn').addEventListener('click', navClickHandler);
+// document.querySelector('#heading').addEventListener('click', navClickHandler);
 
 //Get the button
 var mybutton = document.getElementById("myBtn");
@@ -32,10 +35,10 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     mybutton.style.display = "block";
   } else {
-    // mybutton.style.display = "none";
+    mybutton.style.display = "none";
   }
 }
 

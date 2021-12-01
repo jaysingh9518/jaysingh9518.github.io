@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jay Prakash | Single-Page Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,8 +9,10 @@
   </head>
   <body>
     <!-- Header:  -->
-    <header class="fixed">
+    <header class="fixed" id="header">
       <h1 class="logo"><a id="heading" href="#home1" data-id="home">Jay's Portfolio</a></h1>
+      <label for="toggle">&#9776</label>
+      <input type="checkbox" id="toggle">
       <nav class="nav" id="mySidenav">
         <a class="nav-link" href="#home1" id="home" data-id="home">Home</a>
         <a class="nav-link" href="#about1" id="about" data-id="about">About</a>
@@ -100,7 +102,7 @@
       </div>
       <!--Contact-Section-->
       <div id="contact1">
-        <h2>Contact Me</h2>
+        <h2 class="heading">Contact Me</h2>
         <div class="contactme">
           <form action="/action_page.php">
             <label for="fname">First Name</label>
@@ -125,7 +127,6 @@
     <button id="myBtn" title="Go to top" data-id="home"><a href="#home1">Top</a></button>
     <!-- Footer:  -->
     <footer class="fixed" id="footer">
-      <hr>
       <p>Copyright &copy; 2021</p>
     </footer>
     <script src="js/script.js" charset="utf-8"></script>
