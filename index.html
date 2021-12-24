@@ -10,16 +10,21 @@
   <body>
     <!-- Header:  -->
     <header class="fixed" id="header">
-      <h1 class="logo"><a id="heading" href="#home1" data-id="home">Jay's Portfolio</a></h1>
-      <label for="toggle">&#9776</label>
-      <input type="checkbox" id="toggle">
+      <h1 class="logo"><a id="heading" href="#home1">Jay's Portfolio</a></h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <nav class="nav" id="mySidenav">
-        <a class="nav-link" href="#home1" id="home" data-id="home">Home</a>
-        <a class="nav-link" href="#about1" id="about" data-id="about">About</a>
-        <a class="nav-link" href="#photograph1" id="photograph" data-id="photograph">photography</a>
-        <a class="nav-link" href="#contact1" id="contact" data-id="contact">Contact</a>
+        <ul class="nav-ul">
+          <li class="nav-li"><a class="nav-link" href="#home1" id="home">Home</a></li>
+          <li class="nav-li"><a class="nav-link" href="#about1" id="about">About</a></li>
+          <li class="nav-li"><a class="nav-link" href="#photograph1" id="photograph">photography</a></li>
+          <li class="nav-li"><a class="nav-link" href="#contact1" id="contact">Contact</a></li>
+        </ul> 
       </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
     </header>
+    <!--Container-->
     <div class="container">
       <!--Home-Section:  -->
       <div id="home1">
@@ -131,6 +136,6 @@
       <p>Copyright &copy; 2021</p>
     </footer>
     <script src="js/script.js" charset="utf-8"></script>
-    <script type="text/javascript" src="https://unpkg.com/imagekit-javascript/dist/imagekit.min.js"></script>
+    <!-- <script type="text/javascript" src="https://unpkg.com/imagekit-javascript/dist/imagekit.min.js"></script> -->
   </body>
 </html>

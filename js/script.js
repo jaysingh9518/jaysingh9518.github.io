@@ -1,33 +1,3 @@
-// function changeColor(color) {
-//   document.getElementById('header').style.background = color;
-// }
-
-// function changeColor1(color) {
-//   document.getElementById('footer').style.background = color;
-// }
-
-// function navClickHandler(event) {
-//   const currentPage = event.currentTarget.dataset.id;
-//   const pageBackground = {
-//     'home': 'hsla(0, 0%, 93%, 0.514)',
-//     'about': 'hsla(0, 0%, 93%, 0.514)',
-//     'photograph': 'hsla(0, 0%, 93%, 0.514)',
-//     'contact': 'hsla(0, 0%, 93%, 0.514)',
-//   }
-//   const currPageBg = pageBackground[currentPage];
-//   changeColor(currPageBg)
-//   changeColor1(currPageBg)
-// }
-
-// const navLinks = document.querySelectorAll('#mySidenav a');
-
-// navLinks.forEach((navLink) => {
-//   navLink.addEventListener('click', navClickHandler);
-// });
-
-// document.querySelector('#myBtn').addEventListener('click', navClickHandler);
-// document.querySelector('#heading').addEventListener('click', navClickHandler);
-
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
