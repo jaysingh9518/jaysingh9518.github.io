@@ -23,7 +23,7 @@
   --font-color1: hsl(34, 100%, 80%);
   --font-color2: hsl(216, 100%, 81%);
   --hover-color: hsl(216, 90%, 60%);
-  --font-color3: hsl(177, 66%, 73%);
+  --font-color3: hsl(128, 78%, 18%);
   --font-color4: hsl(0, 8%, 3%);
   
 }
@@ -393,8 +393,12 @@ div.polaroid {
 }
 
 div.content {
+  font-family: var(--font-nb);
   text-align: center;
+  text-shadow: .1px .5px #555;
+  font-weight: 400;
   padding: 10px 20px;
+
 }
 
 #myImg, #myImg1, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6 {
@@ -559,7 +563,7 @@ input[type=submit]:hover {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #ab2222;
   color: white;
   cursor: pointer;
   padding: 15px;
