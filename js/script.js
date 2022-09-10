@@ -1,7 +1,8 @@
 //Form Submission
-function submitForm() {
-document.contact-form.submit();
-document.contact-form.reset();
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
 }
 
 //Get the button
