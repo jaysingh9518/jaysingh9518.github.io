@@ -1,3 +1,9 @@
+//Form Submission
+function submitForm() {
+            document.contact-form.submit();
+            document.contact-form.reset();
+            }
+
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
