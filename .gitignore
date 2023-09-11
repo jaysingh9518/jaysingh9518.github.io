@@ -1,0 +1,6 @@
+/package-lock.json
+/package.json
+/.vscode/
+/node_modules/
+/text/
+/public_html.code-workspace
